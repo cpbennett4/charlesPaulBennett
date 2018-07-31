@@ -1,0 +1,31 @@
+{
+  "name": "charlesPaulBennett",
+  "version": "1.0.0",
+  "description": "My personal Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "inspect": "node --inspect server/app.js",
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpbennett4/charlesPaulBennett.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cpbennett4/charlesPaulBennett/issues"
+  },
+  "homepage": "https://github.com/cpbennett4/charlesPaulBennett#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "pm2": "^3.0.3"
+  }
+}
