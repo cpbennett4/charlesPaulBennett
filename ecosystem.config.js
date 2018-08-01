@@ -6,7 +6,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'chucky',
-      host: 'ec2-54-193-121-79.us-west-1.compute.amazonaws.com',
+      host: 'ec2-54-183-187-238.us-west-1.compute.amazonaws.com',
       key: '~/.ssh/charlesPaulBennett.pem',
       ref: 'origin/master',
       repo: 'git@github.com:cpbennett4/charlesPaulBennett.git',
