@@ -7,7 +7,7 @@ module.exports = {
     production: {
       user: 'chucky',
       host: 'ec2-54-183-187-238.us-west-1.compute.amazonaws.com',
-      key: '~/.ssh/charlesPaulBennett.pem',
+      key: '~/.ssh/charlesPaulBennett/charlesPaulBennett',
       ref: 'origin/master',
       repo: 'git@github.com:cpbennett4/charlesPaulBennett.git',
       path: '/home/chucky/charlesPaulBennett',
