@@ -12,5 +12,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '/../client/public')));
 
 app.listen(port, () => {
-  console.log(`awsPractice listening on port ${port}`);
+  console.log(`charlesPaulBennett listening on port ${port}`);
 });
