@@ -1,0 +1,4 @@
+{
+  "presets": ["react", "env"],
+  "ignore": ["/node_modules", "/server"]
+}

@@ -7,7 +7,8 @@
     "start": "node server/app.js",
     "nodemon": "nodemon --inspect server/app.js",
     "restart": "pm2 startOrRestart ecosystem.config.js",
-    "deploy": "pm2 deploy ecosystem.config.js production"
+    "deploy": "pm2 deploy ecosystem.config.js production",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,19 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "path": "^0.12.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "nodemon": "^1.18.3",
-    "pm2": "^3.0.3"
+    "pm2": "^3.0.3",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0"
   }
 }
