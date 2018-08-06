@@ -14,8 +14,18 @@
     "webpack": "webpack"
   },
   "lint-staged": {
-    "*.js": ["./node_modules/.bin/eslint --ext .js . --fix", "git add"],
-    "*.jsx": ["./node_modules/.bin/eslint --ext .jsx . --fix", "git add"]
+    "*.js": [
+      "./node_modules/.bin/eslint --ext .js . --fix",
+      "git add"
+    ],
+    "*.jsx": [
+      "./node_modules/.bin/eslint --ext .jsx . --fix",
+      "git add"
+    ],
+    "*.{js,jsx,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -53,6 +63,7 @@
     "lint-staged": "^7.2.0",
     "nodemon": "^1.18.3",
     "pm2": "^3.0.3",
+    "prettier": "1.14.0",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0"
   }
