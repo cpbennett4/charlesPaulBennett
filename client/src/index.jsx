@@ -1,4 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './containers/App.jsx';
 
-ReactDom.render(<h1>Hello, Nico :)</h1>, document.getElementById('app'));
+ReactDom.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+  , document.getElementById('app')
+);
