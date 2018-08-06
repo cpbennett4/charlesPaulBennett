@@ -27,6 +27,14 @@ module.exports = {
           presets: ['env', 'react'],
         },
       },
+      {
+        test: /.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          fix: true,
+        },
+      },
     ],
   },
   resolve: {

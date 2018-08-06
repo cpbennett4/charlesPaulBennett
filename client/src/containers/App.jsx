@@ -1,30 +1,22 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Header from '../components/common/Header.jsx';
+import Header from '../components/common/Header';
 
-import About from '../containers/About.jsx';
-import Contact from '../containers/Contact.jsx';
-import Home from '../containers/Home.jsx';
-import Portfolio from '../containers/Portfolio.jsx';
+import About from './About';
+import Contact from './Contact';
+import Home from './Home';
+import Portfolio from './Portfolio';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/About" component={About} />
-          <Route path="/Portfolio" component={Portfolio} />
-          <Route path="/Contact" component={Contact} />
-        </Switch>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <Header />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="/About" component={About} />
+      <Route path="/Portfolio" component={Portfolio} />
+      <Route path="/Contact" component={Contact} />
+    </Switch>
+  </div>
+);
 
 export default App;
