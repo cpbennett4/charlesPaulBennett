@@ -9,7 +9,7 @@ module.exports = {
   context: APP_DIR,
 
   entry: [
-    `${APP_DIR}/index.jsx`
+    `${APP_DIR}/index.jsx`,
   ],
 
   // accurate source map that supports minimizing, though slow
