@@ -8,9 +8,7 @@ module.exports = {
   // overrides default of current working drive
   context: APP_DIR,
 
-  entry: [
-    `${APP_DIR}/index.jsx`,
-  ],
+  entry: [`${APP_DIR}/index.jsx`],
 
   // accurate source map that supports minimizing, though slow
   devtool: 'inline-source-map',
@@ -34,6 +32,10 @@ module.exports = {
         options: {
           fix: true,
         },
+      },
+      {
+        test: /\.s?css$/,
+        loader: 'style-loader!css-loader!sass-loader',
       },
     ],
   },

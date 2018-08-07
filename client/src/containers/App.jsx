@@ -1,11 +1,16 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Header from '../components/common/Header';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import About from './About';
 import Contact from './Contact';
+import Header from '../components/common/Header';
 import Home from './Home';
 import Portfolio from './Portfolio';
+
+library.add(fab);
 
 const App = () => (
   <div className="App">
