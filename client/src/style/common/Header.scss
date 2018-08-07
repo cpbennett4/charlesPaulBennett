@@ -1,56 +1,69 @@
 .Header {
-  background-color: gray;
-
   nav {
+    align-items: center;
+    background-color: #426e86;
     display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 0;
+
+    a {
+      color: #2f3131;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #f8f1e5;
+    }
 
     ul {
-      display: flex;
+      margin: 0;
+      padding: 0;
 
       li {
         list-style: none;
       }
     }
 
+    .active{
+      color: #f9ba32;
+    }
+
     .Logo {
       display: flex;
-      flex: auto;
+      align-items: center;
+      flex: 1 1 25%;
       font-family: 'Aldrich', sans-serif;
 
       h1 {
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 5%;
       }
     }
 
     .Menu {
-      flex: auto;
+      flex: 1 2 50%;
 
-      a {
-        color: black;
-        padding: 0 10px;
-        text-decoration: none;
-      }
+      ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
 
-      .active {
-        color: yellow;
-      }
-
-      li {
-        flex: auto;
+        li {
+          margin: 0 5%;
+        }
       }
     }
 
     .Social {
-      flex: auto;
-
-      a {
-        color: black;
-        padding: 0 10px;
-      }
+      flex: 1 1 25%;
 
       ul {
-        flex-direction: row-reverse;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+
+        li {
+          margin: 0 5%;
+        }
       }
     }
   }
