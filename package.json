@@ -23,7 +23,7 @@
       "git add"
     ],
     "*.{js,jsx,json,css,md}": [
-      "prettier --write",
+      "prettier",
       "git add"
     ]
   },
