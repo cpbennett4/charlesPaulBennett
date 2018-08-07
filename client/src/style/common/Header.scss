@@ -1,3 +1,57 @@
-.Header .Logo {
-  font-family: 'Aldrich', sans-serif;
+.Header {
+  background-color: gray;
+
+  nav {
+    display: flex;
+
+    ul {
+      display: flex;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .Logo {
+      display: flex;
+      flex: auto;
+      font-family: 'Aldrich', sans-serif;
+
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .Menu {
+      flex: auto;
+
+      a {
+        color: black;
+        padding: 0 10px;
+        text-decoration: none;
+      }
+
+      .active {
+        color: yellow;
+      }
+
+      li {
+        flex: auto;
+      }
+    }
+
+    .Social {
+      flex: auto;
+
+      a {
+        color: black;
+        padding: 0 10px;
+      }
+
+      ul {
+        flex-direction: row-reverse;
+      }
+    }
+  }
 }
