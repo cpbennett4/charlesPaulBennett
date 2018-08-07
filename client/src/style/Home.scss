@@ -1,0 +1,11 @@
+@import 'vars';
+
+.Home {
+  text-align: center;
+
+  h2 {
+    color: $activeLink;
+    width: 50%;
+    margin: 15% auto;
+  }
+}
