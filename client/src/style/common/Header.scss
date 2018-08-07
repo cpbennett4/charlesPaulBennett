@@ -1,18 +1,20 @@
+@import '../vars.scss';
+
 .Header {
   nav {
     align-items: center;
-    background-color: #426e86;
+    background-color: $nav;
     display: flex;
     flex-flow: row nowrap;
     padding: 10px 0;
 
     a {
-      color: #2f3131;
+      color: $anchor;
       text-decoration: none;
     }
 
     a:hover {
-      color: #f8f1e5;
+      color: $anchorHover;
     }
 
     ul {
@@ -25,14 +27,14 @@
     }
 
     .active{
-      color: #f9ba32;
+      color: $activeLink;
     }
 
     .Logo {
       display: flex;
       align-items: center;
       flex: 1 1 25%;
-      font-family: 'Aldrich', sans-serif;
+      font-family: $logo;
 
       h1 {
         margin: 0;
