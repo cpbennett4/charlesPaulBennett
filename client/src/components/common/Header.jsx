@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => (
@@ -13,24 +13,24 @@ C
       <div className="Menu">
         <ul>
           <li>
-            <Link to="/">
-Home
-            </Link>
+            <NavLink exact to="/">
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/About">
+            <NavLink to="/About">
 About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/Portfolio">
+            <NavLink to="/Portfolio">
 Portfolio
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/Contact">
+            <NavLink to="/Contact">
 Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -38,12 +38,12 @@ Contact
         <ul>
           <li id="linkedin">
             <a href="http://www.linkedin.com/in/cpbennett4">
-              <FontAwesomeIcon icon={['fab', 'linkedin']} />
+              <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} />
             </a>
           </li>
           <li id="github">
             <a href="http://www.github.com/cpbennett4">
-              <FontAwesomeIcon icon={['fab', 'github']} />
+              <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
             </a>
           </li>
         </ul>
