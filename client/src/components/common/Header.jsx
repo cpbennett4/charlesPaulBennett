@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => (
@@ -7,7 +7,9 @@ const Header = () => (
     <nav className="Nav">
       <div className="Logo">
         <h1>
-C
+          <Link to="/">
+            CPB
+          </Link>
         </h1>
       </div>
       <div className="Menu">
@@ -19,17 +21,17 @@ C
           </li>
           <li>
             <NavLink to="/About">
-About
+              About
             </NavLink>
           </li>
           <li>
             <NavLink to="/Portfolio">
-Portfolio
+              Portfolio
             </NavLink>
           </li>
           <li>
             <NavLink to="/Contact">
-Contact
+              Contact
             </NavLink>
           </li>
         </ul>
@@ -37,12 +39,12 @@ Contact
       <div className="Social">
         <ul>
           <li id="linkedin">
-            <a href="http://www.linkedin.com/in/cpbennett4">
+            <a target="_blank" rel="noopener noreferrer" href="http://www.linkedin.com/in/cpbennett4">
               <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} />
             </a>
           </li>
           <li id="github">
-            <a href="http://www.github.com/cpbennett4">
+            <a target="_blank" rel="noopener noreferrer" href="http://www.github.com/cpbennett4">
               <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
             </a>
           </li>
