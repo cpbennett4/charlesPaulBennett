@@ -21,10 +21,6 @@
     "*.jsx": [
       "./node_modules/.bin/eslint --ext .jsx . --fix",
       "git add"
-    ],
-    "*.{js,jsx,json,css,md}": [
-      "prettier",
-      "git add"
     ]
   },
   "repository": {
@@ -69,7 +65,6 @@
     "node-sass": "^4.9.2",
     "nodemon": "^1.18.3",
     "pm2": "^3.0.3",
-    "prettier": "1.14.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
     "webpack": "^4.16.4",
