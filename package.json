@@ -41,6 +41,7 @@
     "@fortawesome/react-fontawesome": "^0.1.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "jquery": "^3.3.1",
     "path": "^0.12.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
