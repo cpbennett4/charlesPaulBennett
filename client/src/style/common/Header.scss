@@ -1,72 +1,115 @@
-@import '../vars.scss';
+@import '../vars';
 
-.Header {
-  nav {
-    align-items: center;
-    background-color: $nav;
+.Nav {
+  align-items: center;
+  background-color: $nav;
+  display: flex;
+  overflow: hidden;
+  transition: max-height 0.6s;
+
+  a {
+    color: $anchor;
+    text-decoration: none;
+  }
+
+  ul {
     display: flex;
-    flex-flow: row nowrap;
-    padding: 10px 0;
+    margin: 0;
+    padding: 0;
 
-    a {
-      color: $anchor;
-      text-decoration: none;
+    li {
+      text-align: center;
+      list-style: none;
     }
+  }
 
-    a:hover {
-      color: $anchorHover;
+  .Logo {
+    flex: 1 1 25%;
+
+    h1 {
+      margin: 0;
+      padding: 5px;
     }
+  }
+
+  .Menu {
+    flex: 1 2 50%;
+
+    li {
+      flex: auto;
+    }
+  }
+
+  .Social {
+    flex: 1 1 25%;
 
     ul {
+      flex-direction: row-reverse;
+
+      li {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.Handle {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .Nav {
+    display: block;
+    max-height: 0;
+
+    ul {
+      display: block;
       margin: 0;
       padding: 0;
 
       li {
-        list-style: none;
+        border-bottom: 1px solid $anchor;
+        padding: 5px;
       }
-    }
-
-    .active{
-      color: $activeLink;
     }
 
     .Logo {
-      display: flex;
-      align-items: center;
-      flex: 1 1 25%;
-      font-family: $logo;
-
-      h1 {
-        margin: 0;
-        padding: 0 0 0 5%;
-      }
+      display: none;
     }
 
     .Menu {
-      flex: 1 2 50%;
-
       ul {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-
-        li {
-          margin: 0 5%;
+        li:first-of-type {
+          padding-top: 5px;
         }
       }
     }
 
     .Social {
-      flex: 1 1 25%;
-
       ul {
-        display: flex;
-        flex-flow: row-reverse nowrap;
-
-        li {
-          margin: 0 5%;
+        li:last-of-type {
+          border-bottom: none;
+          padding-bottom: 5px;
         }
       }
     }
+  }
+
+  .Handle {
+    align-items: center;
+    background-color: $handle;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .Showing {
+    max-height: 20em;
   }
 }
