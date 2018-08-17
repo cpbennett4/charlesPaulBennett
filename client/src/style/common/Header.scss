@@ -98,8 +98,11 @@
   .Handle {
     align-items: center;
     background-color: $handle;
+    border: none;
     display: flex;
+    font: inherit;
     justify-content: space-between;
+    outline: inherit;
     padding: 10px;
     width: 100%;
 
