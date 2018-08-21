@@ -6,7 +6,9 @@
   display: flex;
   height: 50px;
   overflow: hidden;
+  position: fixed;
   transition: max-height 0.6s;
+  width: 100%;
 
   a {
     color: $anchor;
@@ -73,6 +75,8 @@
     display: block;
     height: inherit;
     max-height: 0;
+    position: aboslute;
+    top: 50px;
 
     ul {
       display: block;
@@ -117,6 +121,7 @@
     justify-content: space-between;
     outline: inherit;
     padding: 10px;
+    position: fixed;
     width: 100%;
 
     h3 {
