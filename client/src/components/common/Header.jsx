@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import $ from 'jquery';
 
 const toggleShowing = () => {
-  // get nav element
-  const $nav = document.getElementsByTagName('nav')[0];
-  // toggle class Showing
-  $($nav).toggleClass('Showing');
+  if (document.documentElement.clientWidth <= 600) {
+    // get nav element
+    const $nav = document.getElementsByTagName('nav')[0];
+    // toggle class Showing
+    $($nav).toggleClass('Showing');
+  }
 };
 
 const Header = () => (
