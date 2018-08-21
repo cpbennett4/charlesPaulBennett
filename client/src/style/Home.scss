@@ -1,11 +1,45 @@
 @import 'vars';
 
 .Home {
-  text-align: center;
+  height: 100vh;
 
-  h2 {
-    color: $activeLink;
-    width: 50%;
-    margin: 15% auto;
+  .jumboTron {
+    background-image: url('./assets/images/whiteBrick.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .container {
+      padding: 30vh 20vw 0;
+
+      h1 {
+        margin: 0;
+      }
+
+      button {
+        background-color: $yellow;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 10px 0 0;
+      }
+    }
+
+    .skillsLead {
+      padding: 0 20vw;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Home {
+    .jumboTron {
+      .container{
+        padding: 15vh 10vw 0;
+      }
+
+      .skillsLead {
+        padding: 0 10vw;
+      }
+    }
   }
 }

@@ -2,21 +2,22 @@
 
 .Nav {
   align-items: center;
-  background-color: $nav;
+  background-color: $slate;
   display: flex;
   height: 50px;
   overflow: hidden;
   position: fixed;
-  transition: max-height 0.6s;
+  top: 0;
+  transition: max-height 0.4s;
   width: 100%;
 
   a {
-    color: $anchor;
+    color: $white;
     text-decoration: none;
   }
 
   a:hover, a:focus {
-    color: $anchorHover;
+    color: $slate;
   }
 
   ul {
@@ -31,14 +32,13 @@
   }
 
   .active {
-    color: $activeLink;
+    color: $yellow;
   }
 
   .Logo {
     flex: 1 1 25%;
 
     h1 {
-      font-family: $logo;
       margin: 0;
       padding: 5px;
     }
@@ -72,6 +72,7 @@
 
 @media screen and (max-width: 600px) {
   .Nav {
+    background-color: $slate;
     display: block;
     height: inherit;
     max-height: 0;
@@ -84,7 +85,7 @@
       padding: 0;
 
       li {
-        border-bottom: 1px solid $anchor;
+        border-bottom: 1px solid $white;
         padding: 5px;
       }
     }
@@ -96,6 +97,7 @@
     .Menu {
       ul {
         li:first-of-type {
+          border-top: 1px solid $white;
           padding-top: 5px;
         }
       }
@@ -113,7 +115,7 @@
 
   .Handle {
     align-items: center;
-    background-color: $handle;
+    background-color: $slate;
     border: none;
     cursor: pointer;
     display: flex;
@@ -125,8 +127,13 @@
     width: 100%;
 
     h3 {
+      color: $white;
       margin: 0;
       padding: 0;
+    }
+
+    svg {
+      color: $white;
     }
   }
 

@@ -1,12 +1,11 @@
 /*Fonts*/
-  /*Aldrich*/
-  @import url('https://fonts.googleapis.com/css?family=Aldrich');
-  $logo: 'Aldrich', sans-serif;
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400');
+  $openSansReg: 'Open Sans', Sans-Serif;
+  $raleway: 'Raleway', Sans-Serif;
 
 /*Colors: #54 Modern & Urban from https://www.canva.com/learn/100-color-combinations/*/
-  $activeLink: #f9ba32;
-  $anchor: #2f3131;
-  $anchorHover: #f8f1e5;
-  $background: #2f3131;
-  $nav: #426e86;
-  $handle: #224959;
+  $yellow: #f9ba32;
+  $white: #f8f1e5;
+  $slate: #2f3131;
+  $teal: #426e86;
+  $ocean: #224959;

@@ -3,7 +3,8 @@
 @import 'vars';
 
 html, body {
-  background-color: $background;
+  background-color: $slate;
+  font-family: $openSansReg;
   padding: 0;
   margin: 0;
 }
