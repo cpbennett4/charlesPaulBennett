@@ -37,6 +37,16 @@ module.exports = {
         test: /\.s?css$/,
         loader: 'style-loader!css-loader!sass-loader',
       },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 8000, // Convert images < 8kb to base64 strings
+            name: 'assets/images[hash]-[name].[ext]',
+          },
+        }],
+      },
     ],
   },
   resolve: {
@@ -46,7 +56,6 @@ module.exports = {
       // works fine
       'node_modules',
     ],
-    // .scss extensions don't resolve for some reason
     extensions: ['*', '.js', '.jsx', '.css', '.scss', '.sass'],
   },
   output: {
