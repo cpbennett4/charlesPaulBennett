@@ -12,6 +12,12 @@ const toggleShowing = () => {
 
 const Header = () => (
   <div className="Header">
+    <button className="Handle" type="button" onClick={toggleShowing}>
+      <h3>
+        Menu
+      </h3>
+      <FontAwesomeIcon icon="bars" />
+    </button>
     <nav className="Nav">
       <div className="Logo">
         <h1>
@@ -69,12 +75,6 @@ const Header = () => (
         </ul>
       </div>
     </nav>
-    <button className="Handle" type="button" onClick={toggleShowing}>
-      <h3>
-        Menu
-      </h3>
-      <FontAwesomeIcon icon="bars" />
-    </button>
   </div>
 );
 

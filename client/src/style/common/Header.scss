@@ -4,6 +4,7 @@
   align-items: center;
   background-color: $nav;
   display: flex;
+  height: 50px;
   overflow: hidden;
   transition: max-height 0.6s;
 
@@ -64,11 +65,13 @@
 
 .Handle {
   display: none;
+  height: 50px;
 }
 
 @media screen and (max-width: 600px) {
   .Nav {
     display: block;
+    height: inherit;
     max-height: 0;
 
     ul {
