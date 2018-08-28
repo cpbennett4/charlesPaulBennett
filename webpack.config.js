@@ -1,5 +1,6 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'client/public');
 const APP_DIR = path.resolve(__dirname, 'client/src');
@@ -60,10 +61,15 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader',
+      },
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(BUILD_DIR, { exclude: ['index.html'] }),
+    new HtmlWebpackPlugin({ template: 'index.hbs' }),
+    new CleanWebpackPlugin(BUILD_DIR),
   ],
   resolve: {
     modules: [
