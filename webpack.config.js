@@ -1,4 +1,5 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'client/public');
 const APP_DIR = path.resolve(__dirname, 'client/src');
@@ -47,8 +48,23 @@ module.exports = {
           },
         }],
       },
+      {
+        test: /\.pdf$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/',
+            },
+          },
+        ],
+      },
     ],
   },
+  plugins: [
+    new CleanWebpackPlugin(BUILD_DIR, { exclude: ['index.html'] }),
+  ],
   resolve: {
     modules: [
       // doesn't seem to work
