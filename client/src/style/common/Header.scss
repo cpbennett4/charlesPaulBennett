@@ -10,6 +10,7 @@
   top: 0;
   transition: max-height 0.4s;
   width: 100%;
+  z-index: 5;
 
   a {
     color: $white;
