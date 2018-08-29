@@ -14,13 +14,15 @@
     "webpack": "webpack"
   },
   "lint-staged": {
-    "*.js": [
-      "./node_modules/.bin/eslint --ext .js . --fix",
-      "git add"
-    ],
-    "*.jsx": [
-      "./node_modules/.bin/eslint --ext .jsx . --fix",
-      "git add"
+    "linters": {
+      "*.{js, jsx}": [
+        "./node_modules/.bin/eslint --fix",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "*.bundle.js",
+      "*.worker.js"
     ]
   },
   "repository": {
@@ -46,6 +48,7 @@
     "path": "^0.12.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-pdf": "^3.0.5",
     "react-router-dom": "^4.3.1",
     "serve-favicon": "^2.5.0"
   },
