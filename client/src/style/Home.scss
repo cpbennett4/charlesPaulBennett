@@ -16,17 +16,32 @@
         margin: 0;
       }
 
-      button {
-        background-color: $yellow;
-        border-radius: 5px;
-        padding: 10px;
-        margin: 0 10px 0 0;
+      button:first-child {
+        margin-right: 10px;
       }
     }
 
     .skillsLead {
       padding: 0 20vw;
     }
+  }
+
+  .Pdf {
+  }
+
+  button {
+    background-color: $yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font: inherit;
+    outline: inherit;
+    padding: 10px;
+    transition: box-shadow 0.2s;
+  }
+
+  button:hover, button:focus {
+    box-shadow: 3px 3px 15px $slate;
   }
 }
 
@@ -39,6 +54,21 @@
 
       .skillsLead {
         padding: 0 10vw;
+      }
+    }
+
+    .Pdf {
+      .meta {
+        background-color: $gray;
+        display: flex;
+        padding: 50px 0 0 0;
+      }
+
+      canvas {
+        margin: 0 auto;
+      }
+
+      button {
       }
     }
   }
