@@ -7,4 +7,7 @@ module.exports = {
   "plugins": [
     "react"
   ],
+  "rules": {
+    "no-restricted-globals": 1,
+  },
 };
