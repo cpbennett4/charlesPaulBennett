@@ -46,6 +46,7 @@
     "handlebars": "^4.0.11",
     "jquery": "^3.3.1",
     "path": "^0.12.7",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-pdf": "^3.0.5",
