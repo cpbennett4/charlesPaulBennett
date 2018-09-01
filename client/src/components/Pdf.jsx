@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
-import myResume from '../style/assets/Resume.pdf';
+import myResume from '../style/assets/charlesPaulBennettResume.pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 
 class Pdf extends React.Component {
@@ -28,6 +28,11 @@ class Pdf extends React.Component {
       const newScale = scale / 1.1;
       this.setState({ scale: newScale });
     };
+
+    this.fetchResume = () => {
+      // trigger file download without opening new window or tab
+      window.location.assign('/downloadResume');
+    };
   }
 
   componentWillMount() {
@@ -45,13 +50,19 @@ class Pdf extends React.Component {
     const { removePdf } = this.props;
     return (
       <div className="Pdf">
-        <div className="meta">
+        <div className="actions">
           <p>
             Page
             {pageNumber}
             of
             {numPages}
           </p>
+          <button
+            type="button"
+            onClick={this.fetchResume}
+          >
+            download
+          </button>
           <button
             type="button"
             onClick={this.increaseScale}
