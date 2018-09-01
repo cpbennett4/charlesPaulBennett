@@ -14,6 +14,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, '/../client/public')));
 
+app.get('/downloadResume', (request, response) => {
+  const resume = path.join(__dirname, '../client/src/style/assets/charlesPaulBennettResume.pdf');
+  response.download(resume);
+});
+
 app.listen(port, () => {
   console.log(`charlesPaulBennett listening on port ${port}`);
 });
