@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 import myResume from '../style/assets/charlesPaulBennettResume.pdf';
+import PdfController from './PdfController';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 
 class Pdf extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      numPages: null,
+      numPages: 1,
       pageNumber: 1,
       scale: 0.6,
     };
@@ -28,11 +29,6 @@ class Pdf extends React.Component {
       const newScale = scale / 1.1;
       this.setState({ scale: newScale });
     };
-
-    this.fetchResume = () => {
-      // trigger file download without opening new window or tab
-      window.location.assign('/downloadResume');
-    };
   }
 
   componentWillMount() {
@@ -50,38 +46,13 @@ class Pdf extends React.Component {
     const { removePdf } = this.props;
     return (
       <div className="Pdf">
-        <div className="actions">
-          <p>
-            Page
-            {pageNumber}
-            of
-            {numPages}
-          </p>
-          <button
-            type="button"
-            onClick={this.fetchResume}
-          >
-            download
-          </button>
-          <button
-            type="button"
-            onClick={this.increaseScale}
-          >
-            zoom in
-          </button>
-          <button
-            type="button"
-            onClick={this.decreaseScale}
-          >
-            zoom out
-          </button>
-          <button
-            type="button"
-            onClick={removePdf}
-          >
-            Close pdf
-          </button>
-        </div>
+        <PdfController
+          decreaseScale={this.decreaseScale}
+          increaseScale={this.increaseScale}
+          numPages={numPages}
+          pageNumber={pageNumber}
+          removePdf={removePdf}
+        />
         <Document
           file={myResume}
           onLoadSuccess={this.onDocumentLoadSuccess}
