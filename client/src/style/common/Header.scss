@@ -3,6 +3,7 @@
 .Nav {
   align-items: center;
   background-color: $slate;
+  box-shadow: 0px 2px 5px $white;
   display: flex;
   height: 50px;
   overflow: hidden;
@@ -67,6 +68,7 @@
 }
 
 .Handle {
+  box-shadow: 0px 2px 5px $white;
   display: none;
   height: 50px;
 }
