@@ -12,16 +12,48 @@ import Portfolio from './Portfolio';
 
 library.add(fab);
 
-const App = () => (
-  <div className="App">
-    <Header />
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/About" component={About} />
-      <Route path="/Portfolio" component={Portfolio} />
-      <Route path="/Contact" component={Contact} />
-    </Switch>
-  </div>
-);
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      showingPdf: false,
+    };
+
+    this.showPdf = () => {
+      this.setState({ showingPdf: true });
+    };
+
+    this.removePdf = () => {
+      this.setState({ showingPdf: false });
+    };
+  }
+
+  render() {
+    const { showingPdf } = this.state;
+    return (
+      <div className="App">
+        <Header
+          removePdf={this.removePdf}
+        />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <Home
+                showingPdf={showingPdf}
+                showPdf={this.showPdf}
+                removePdf={this.removePdf}
+              />)
+            }
+          />
+          <Route path="/About" component={About} />
+          <Route path="/Portfolio" component={Portfolio} />
+          <Route path="/Contact" component={Contact} />
+        </Switch>
+      </div>
+    );
+  }
+}
 
 export default App;
