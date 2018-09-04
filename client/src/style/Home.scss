@@ -26,33 +26,6 @@
     }
   }
 
-  .Pdf {
-    button {
-      margin: 10px 10px;
-    }
-
-    .actions {
-      align-items: center;
-      background-color: $gray;
-      display: flex;
-      padding: 50px 0 0 0;
-      width: 100vw;
-
-      p {
-        flex: 1;
-        text-align: center;
-      }
-
-      button {
-        flex: 1;
-      }
-    }
-
-    canvas {
-      margin: 0 auto;
-    }
-  }
-
   button {
     background-color: $yellow;
     border: none;
@@ -78,12 +51,6 @@
 
       .skillsLead {
         padding: 0 10vw;
-      }
-    }
-
-    .Pdf {
-      canvas {
-        margin: 0 auto;
       }
     }
   }

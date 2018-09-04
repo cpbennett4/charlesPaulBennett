@@ -1,0 +1,12 @@
+@import 'vars';
+
+.Pdf {
+  padding-top: 50px;
+
+  canvas {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
