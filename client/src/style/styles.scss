@@ -1,6 +1,8 @@
-@import 'Home';
-@import 'common/Header';
 @import 'vars';
+@import 'common/Header';
+@import 'Home';
+@import 'Pdf';
+@import 'PdfController';
 
 html, body {
   background-color: $slate;
