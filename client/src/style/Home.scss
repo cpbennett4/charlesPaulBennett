@@ -5,6 +5,9 @@
 
   .jumboTron {
     background-image: url('./assets/images/whiteBrick.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -34,6 +37,9 @@
     font: inherit;
     outline: inherit;
     padding: 10px;
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    -o-transition: box-shadow 0.2s;
     transition: box-shadow 0.2s;
   }
 
