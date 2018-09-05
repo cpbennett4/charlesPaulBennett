@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
-import myResume from '../style/assets/charlesPaulBennettResume.pdf';
 import PdfController from './PdfController';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 
@@ -43,7 +42,7 @@ class Pdf extends React.Component {
 
   render() {
     const { numPages, pageNumber, scale } = this.state;
-    const { removePdf } = this.props;
+    const { file, removePdf } = this.props;
     return (
       <div className="Pdf">
         <PdfController
@@ -54,7 +53,7 @@ class Pdf extends React.Component {
           removePdf={removePdf}
         />
         <Document
-          file={myResume}
+          file={file}
           onLoadSuccess={this.onDocumentLoadSuccess}
         >
           <Page
@@ -68,6 +67,7 @@ class Pdf extends React.Component {
 }
 
 Pdf.propTypes = {
+  file: PropTypes.string.isRequired,
   removePdf: PropTypes.func.isRequired,
 };
 

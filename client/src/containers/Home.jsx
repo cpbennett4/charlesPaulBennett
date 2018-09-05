@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Pdf from '../components/Pdf';
+import myResume from '../style/assets/charlesPaulBennettResume.pdf';
 
 const Home = (props) => {
   const { showingPdf, showPdf, removePdf } = props;
@@ -39,7 +40,7 @@ const Home = (props) => {
   return (
     <div className="Home">
       {
-        showingPdf ? <Pdf removePdf={removePdf} /> : home
+        showingPdf ? <Pdf removePdf={removePdf} file={myResume} /> : home
       }
     </div>
   );
