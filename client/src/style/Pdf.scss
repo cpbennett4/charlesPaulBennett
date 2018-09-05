@@ -3,7 +3,8 @@
 .Pdf {
   padding-top: 50px;
 
-  canvas {
-    margin: 0 auto;
+  .react-pdf__Document {
+    display: flex;
+    justify-content: center;
   }
 }
