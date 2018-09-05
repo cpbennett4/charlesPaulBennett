@@ -84,6 +84,16 @@ const Header = (props) => {
                 <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
               </a>
             </li>
+            <li id="medium">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://www.medium.com/@cpbennett4"
+                onClick={toggleShowing}
+              >
+                <FontAwesomeIcon size="lg" icon={['fab', 'medium']} />
+              </a>
+            </li>
           </ul>
         </div>
       </nav>

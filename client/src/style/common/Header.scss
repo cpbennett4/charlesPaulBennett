@@ -58,7 +58,7 @@
     flex: 1 1 25%;
 
     ul {
-      flex-direction: row-reverse;
+      justify-content: flex-end;
 
       li {
         padding: 5px;
