@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Pdf from '../components/Pdf';
 import myResume from '../style/assets/charlesPaulBennettResume.pdf';
 
@@ -26,7 +27,9 @@ const Home = (props) => {
             View Resume
           </button>
           <button type="button">
-            Contact Me
+            <Link to="/Contact">
+              Contact Me
+            </Link>
           </button>
         </div>
       </div>

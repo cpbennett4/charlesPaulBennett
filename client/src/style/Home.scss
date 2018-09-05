@@ -3,6 +3,11 @@
 .Home {
   height: 100vh;
 
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
   .jumboTron {
     background-image: url('./assets/images/whiteBrick.jpg');
     -webkit-background-size: cover;
