@@ -4,13 +4,30 @@ import { BrowserRouter } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import {
-  faBars, faDownload, faSearchPlus, faSearchMinus, faTimes, faMapMarkedAlt, faAt, faPhone,
+  faBars,
+  faDownload,
+  faSearchPlus,
+  faSearchMinus,
+  faTimes,
+  faMapMarkedAlt,
+  faAt,
+  faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 import App from './containers/App';
 
 require('./style/styles.scss');
 
-library.add(fab, faBars, faDownload, faSearchPlus, faSearchMinus, faTimes, faMapMarkedAlt, faAt, faPhone);
+library.add(
+  fab,
+  faBars,
+  faDownload,
+  faSearchPlus,
+  faSearchMinus,
+  faTimes,
+  faMapMarkedAlt,
+  faAt,
+  faPhone,
+);
 
 ReactDom.render(
   <BrowserRouter>
