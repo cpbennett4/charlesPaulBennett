@@ -20,11 +20,8 @@ const Contact = () => (
         Lets Collaborate
       </h1>
       <h3>
-        The hardest part of any important task is getting started on it in the first Place.
+        The hardest part of anything is simply getting started.
       </h3>
-      <h5>
-        -Brian Tracy
-      </h5>
     </div>
     <div className="contactInfo">
       <div id="location">
