@@ -10,6 +10,7 @@ import {
   faSearchMinus,
   faTimes,
   faMapMarkedAlt,
+  faMapMarkerAlt,
   faAt,
   faPhone,
 } from '@fortawesome/free-solid-svg-icons';
@@ -25,6 +26,7 @@ library.add(
   faSearchMinus,
   faTimes,
   faMapMarkedAlt,
+  faMapMarkerAlt,
   faAt,
   faPhone,
 );
