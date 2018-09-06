@@ -24,19 +24,37 @@ const Contact = () => (
       </h3>
     </div>
     <div className="contactInfo">
-      <div id="location">
-        <FontAwesomeIcon size="lg" icon="map-marked-alt" />
-      </div>
-      <div id="email">
-        <FontAwesomeIcon size="lg" icon="at" />
-      </div>
-      <div id="phone">
-        <FontAwesomeIcon size="lg" icon="phone" />
+      <h2>
+        Communication
+      </h2>
+      <div className="contactCards">
+        <div id="location">
+          <FontAwesomeIcon size="2x" icon="map-marked-alt" />
+          <p>
+            Palo Alto, CA
+          </p>
+        </div>
+        <div id="email">
+          <FontAwesomeIcon size="2x" icon="at" />
+          <p>
+            <a href="mailto:cpbennett4@gmail.com">
+              cpbennett4@gmail.com
+            </a>
+          </p>
+        </div>
+        <div id="phone">
+          <FontAwesomeIcon size="2x" icon="phone" />
+          <p>
+            <a href="tel:7656354700">
+              765.635.4700
+            </a>
+          </p>
+        </div>
       </div>
     </div>
     <div className="social">
       <h1>
-        Please feel free to connect with me on LinkedIn, GitHub, and Medium
+        Networks and Blog
       </h1>
       <ul>
         <li id="linkedin">
