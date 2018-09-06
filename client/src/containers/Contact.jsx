@@ -53,9 +53,9 @@ const Contact = () => (
       </div>
     </div>
     <div className="social">
-      <h1>
+      <h2>
         Networks and Blog
-      </h1>
+      </h2>
       <ul>
         <li id="linkedin">
           <a
@@ -63,7 +63,7 @@ const Contact = () => (
             rel="noopener noreferrer"
             href="http://www.linkedin.com/in/cpbennett4"
           >
-            <FontAwesomeIcon size="lg" icon={['fab', 'linkedin']} />
+            <FontAwesomeIcon size="3x" icon={['fab', 'linkedin']} />
           </a>
         </li>
         <li id="github">
@@ -72,7 +72,7 @@ const Contact = () => (
             rel="noopener noreferrer"
             href="http://www.github.com/cpbennett4"
           >
-            <FontAwesomeIcon size="lg" icon={['fab', 'github']} />
+            <FontAwesomeIcon size="3x" icon={['fab', 'github']} />
           </a>
         </li>
         <li id="medium">
@@ -81,7 +81,7 @@ const Contact = () => (
             rel="noopener noreferrer"
             href="http://www.medium.com/@cpbennett4"
           >
-            <FontAwesomeIcon size="lg" icon={['fab', 'medium']} />
+            <FontAwesomeIcon size="3x" icon={['fab', 'medium']} />
           </a>
         </li>
       </ul>
